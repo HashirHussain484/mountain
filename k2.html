@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ *{
+  
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+/* nav */
+.as >h1{
+color:white;
+}
+.as >h1 span{
+color: rgba(0, 0, 0, 0.819);
+font-weight: 700;
+font-style: italic;
+}
+.as{
+color: white;
+}
+i{
+color: white;
+}
+.hiding h1{
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 5);
+  }
+
+
+  /* cards */
+  /* // Colors
+$color-primary-white: rgb(240, 240, 240); */
+
+.real{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.card {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: color-primary-white;
+  color: white;
+  .hiding h1{
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 5);
+  }
+
+  /* box-shadow: 0 10px 30px 5px rgba(181, 164, 164, 0.2); */
+ 
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity .2s ease-out;
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+  }
+  
+  p, a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+  }
+  
+  p {
+    inset: auto auto 80px 30px;
+    color: white;
+  }
+  
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+    border: 3px solod white;
+    font-size: larger;
+    font-weight: bolder;
+  }
+   
+  
+  &:hover h2 {
+    inset: auto auto 220px 30px;
+    transition: inset .3s ease-out;
+  }
+  
+  &:hover p, &:hover a {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+  }
+  
+  &:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+  }
+
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+ /* cards */
+
+  .content {
+    height: auto;
+  }
+
+  .content h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.819);
+    /* text-shadow: 0 5px 10px rgba(0, 0, 0, 5); */
+
+
+  }
+  .content p{
+  
+    text-align: justify;
+  }
+
+  .pic img {
+    height: 400px;
+    width: 100vh;
+    border-radius: 30px;
+  }
+  .list-unstyled a{
+  text-decoration: none;
+}
+
+ 
+
+  .gallery {
+    margin-top: 10%;
+  }
+
+  .gallery h1 {
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 5);
+  }
+
+  .gallery img {
+    height: 100vh;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .maincards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  a button{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    justify-content: center;
+    border: 20px;
+    padding-left: 10px;
+    margin-left: 20px;
+    
+  }
+  
+  a button:hover{
+    box-shadow: 20 50px burlywood;
+    text-decoration:underline;
+    border: 20px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    
+  }
+  div {
+    text-align: center;
+  }
+
+
+</style>
+<body>
+<!-- .nav -->
+<div id="navbar"></div>
+<!-- .nav -->
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="content">
+          <h1>k2 mountains</h1>
+          <p>K2, at 8,611 metres (28,251 ft) above sea level, is the second-highest mountain on Earth, after Mount Everest at 8,849 metres (29,032 ft).[3] It lies in the Karakoram range, partially in the Gilgit-Baltistan region of Pakistan-administered Kashmir and partially in the China-administered Trans-Karakoram Tract in the Taxkorgan Tajik Autonomous County of Xinjiang.[4][5][6][a]
+
+            K2 also became popularly known as the Savage Mountain after George Bell—a climber on the 1953 American expedition—told reporters, "It's a savage mountain that tries to kill you."[7] Of the five highest mountains in the world, K2 is the deadliest; approximately one person dies on the mountain for every four who reach the summit.[7][8] Also occasionally known as Mount Godwin-Austen,[9] other nicknames for K2 are The King of Mountains and The Mountaineers' Mountain,[10] as well as The Mountain of Mountains after prominent Italian climber Reinhold Messner titled his book about K2 the same.[11]
+            
+            Although the summit of Everest is at a higher altitude, K2 is a more difficult and dangerous climb, due in part to its more northern location, where inclement weather is more common.</p>
+
+           
+        </div>
+      </div>
+      <div class="col-lg-6  col-md-12 col-sm-12">
+
+        <div class="pic">
+          <img src="k2.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hiding"> <h1>K2 Tours</h1></div>
+<!-- <div class="</div> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  
+  <div class="real">
+    <div class = "card">
+      <img src="K2 3.webp" alt="">
+      <div class="card-content">
+    
+        <a href="#" class="button">
+          
+        
+        </a>
+      </div>
+    </div>
+
+    <div class = "card">
+      <img src="hunza valley.jpg" alt="">
+      <div class="card-content">
+     
+        <a href="#" class="button">
+         
+        </a>
+      </div>
+    </div>
+    <div class = "card">
+      <img src="hunza valley.jpg" alt="">
+      <div class="card-content">
+    
+        <a href="#" class="button">
+         
+        </a>
+      </div>
+    </div>
+
+    <div class = "card">
+      <img src="minimarry.jpg" alt="">
+      <div class="card-content">
+     
+        <a href="#" class="button">
+         
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col -lg-12 col-md-12 col-sm-12">
+        <div>
+          <a href="booking.html"><button>Booking Now</button></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  
+<!-- cards">-->
+
+ <div id="footer"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="nav.js"></script>
+  </body>
+
+
+
+
+</html>

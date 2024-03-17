@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilgit Buldistan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  *{
+  
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+  
+  font-family: 'Poppins', sans-serif;
+}
+.as >h1{
+color:white;
+}
+.as >h1 span{
+color: rgba(255, 0, 0, 0.819);
+font-weight: 700;
+font-style: italic;
+}
+.as{
+color: white;
+}
+i{
+color: white;
+}
+.hiding h1{
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 5);
+  }
+
+
+  /* cards */
+  /* // Colors
+$color-primary-white: rgb(240, 240, 240); */
+
+.real{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: color-primary-white;
+  color: white;
+  .hiding h1{
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 5);
+  }
+
+  /* box-shadow: 0 10px 30px 5px rgba(181, 164, 164, 0.2); */
+ 
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity .2s ease-out;
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+  }
+  
+  p, a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+  }
+  
+  p {
+    inset: auto auto 80px 30px;
+    color: white;
+  }
+  
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+    border: 3px solod white;
+    font-size: larger;
+    font-weight: bolder;
+  }
+   
+  
+  &:hover h2 {
+    inset: auto auto 220px 30px;
+    transition: inset .3s ease-out;
+  }
+  
+  &:hover p, &:hover a {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+  }
+  
+  &:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+  }
+
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+ /* cards */
+
+  .content {
+    height: auto;
+  }
+
+  .content h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.819);
+    /* text-shadow: 0 5px 10px rgba(0, 0, 0, 5); */
+
+
+  }
+
+  .pic img {
+    height: 400px;
+    width: 100vh;
+    border-radius: 30px;
+  }
+
+ 
+
+  .gallery {
+    margin-top: 10%;
+  }
+
+  .gallery h1 {
+    text-align: center;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 5);
+  }
+
+  .gallery img {
+    height: 100vh;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .maincards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  a button{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    justify-content: center;
+    border: 20px;
+    padding-left: 10px;
+    margin-left: 20px;
+    
+  }
+  
+  a button:hover{
+    box-shadow: 20 50px burlywood;
+    text-decoration:underline;
+    border: 20px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    
+  }
+  div {
+    text-align: center;
+  }
+  .list-unstyled a{
+  text-decoration: none;
+}
+.top  h2 i{
+  color: rgb(255, 56, 56);
+}
+
+
+</style>
+
+<body>
+<div id="navbar"></div>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="content">
+          <h1>East Everest Mountain</h1>
+          <p>Dhaulagiri, located in Nepal, is the seventh highest mountain in the world at 8,167 metres (26,795 ft) above sea level, and the highest mountain within the borders of a single country. It was first climbed on 13 May 1960 by a Swiss-Austrian-Nepali expedition. Annapurna I (8,091 m (26,545 ft)) is 34 km (21 mi) east of Dhaulagiri. The Kali Gandaki River flows between the two in the Kaligandaki Gorge, said to be the world's deepest.[citation needed] The town of Pokhara is south of the Annapurnas, an important regional center and the gateway for climbers and trekkers visiting both ranges as well as a tourist destination in its own right..</p>
+        </div>
+      </div>
+      <div class="col-lg-6  col-md-12 col-sm-12">
+
+        <div class="pic">
+          <img src="dh1.jpeg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hiding"> <h1>East Everest Mountains</h1></div>
+<!-- <div class="</div> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  
+  <div class="real">
+    <div class = "card">
+      <img src="dh2.jpeg" alt="">
+      <div class="card-content">
+ 
+        
+        <a href="#" class="button">
+          
+         
+        </a>
+      </div>
+    </div>
+
+    <div class = "card">
+      <img src="dh3.jpeg" alt="">
+      <div class="card-content">
+  \
+        <a href="#" class="button">
+        
+          
+        </a>
+      </div>
+    </div>
+    <div class = "card">
+      <img src="dh4.jpeg" alt="">
+      <div class="card-content">
+     
+        <a href="#" class="button">
+        
+          
+        </a>
+      </div>
+    </div>
+
+    <div class = "card">
+      <img src="minimarry.jpg" alt="">
+      <div class="card-content">
+     
+        <a href="#" class="button">
+          
+         
+        </a>
+      </div>
+    </div>
+  </div>
+  
+<!-- cards">-->
+<!-- <div class="container">
+  <div class="row">
+    <div class="col -lg-12 col-md-12 col-sm-12">
+      
+        <a href="booking.html"><button>Booking Now</button></a>
+      
+    </div>
+  </div>
+</div> -->
+
+ 
+<div id="footer"></div>
+
+
+</body>
+<script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="nav.js"></script>
+<script src="owl.carousel.min.js"></script>
+
+</html>
